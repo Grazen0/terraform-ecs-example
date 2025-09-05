@@ -1,6 +1,6 @@
 variable "labrole_arn" {
   type        = string
-  description = "The ARN of the LabRole"
+  description = "The ARN of the LabRole to use as execution role"
 }
 
 variable "container_image" {
@@ -19,7 +19,6 @@ variable "host_port" {
   default     = 80
   description = "Port that the container port should be bound to in the host"
 }
-
 
 variable "container_cpu" {
   type        = number
