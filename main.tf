@@ -60,7 +60,7 @@ resource "aws_security_group" "anime_api" {
 
   ingress {
     from_port   = var.container_port
-    to_port     = var.host_port
+    to_port     = var.container_port
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }

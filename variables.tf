@@ -14,12 +14,6 @@ variable "container_port" {
   description = "Port that the app binds to"
 }
 
-variable "host_port" {
-  type        = number
-  default     = 80
-  description = "Port that the container port should be bound to in the host"
-}
-
 variable "container_cpu" {
   type        = number
   default     = 1024
